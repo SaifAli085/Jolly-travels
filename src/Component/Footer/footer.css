@@ -1,0 +1,149 @@
+.footer {
+  width: 100%;
+  position: relative;
+  padding: 2rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.videoDiv {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  &::after {
+    content: "";
+    position: absolute;
+    background: rgba(10, 84, 107, 0.307);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    mix-blend-mode: multiply;
+  }
+}
+
+.secContent {
+  width: 100%;
+  height: max-content;
+  padding: 2rem initial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  row-gap: 2rem;
+  z-index: 100;
+}
+
+.contactDiv {
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.text small {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--whiteColor);
+}
+
+.text h2 {
+  color: var(--whiteColor);
+  font-size: 1.8rem;
+}
+
+.inputDiv {
+  width: 100%;
+  gap: 1rem;
+  flex-direction: column;
+}
+.inputDiv input {
+  width: 100%;
+  padding: 0.5rem 0.6rem;
+  border-radius: 3rem;
+  border: 1px solid var(--whiteColor);
+  outline: none;
+  background: transparent;
+  color: var(--whiteColor);
+
+  &::placeholder {
+    color: var(--whiteColor);
+    opacity: 0.7;
+  }
+}
+
+.btn {
+  width: 100%;
+  justify-content: center;
+  color: var(--whiteColor);
+  font-weight: 500;
+  gap: 0.5rem;
+}
+.icons {
+  font-size: 18px;
+  color: white;
+}
+
+.footerLinks {
+  position: relative;
+  display: flex;
+  padding: 1rem 1rem 4rem;
+  border-radius: 1rem;
+  background: var(--bodyColor);
+  width: 100%;
+  height: max-content;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.groupTitle {
+  display: block;
+  font-weight: 600;
+  color: var(--blackColor);
+  margin-bottom: 1rem;
+}
+
+.footerList {
+  font-size: 15px;
+  color: var(--textColor);
+  transition: 0.3s ease-in-out;
+  gap: 0.5rem;
+  &:hover {
+    color: var(--primaryColor);
+    transform: translate(7px);
+    cursor: pointer;
+  }
+}
+.iconb {
+  color: var(--greyColor);
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.logoDiv {
+  display: flex;
+  width: 100%;
+  margin: 0 0 1rem;
+}
+.logo {
+  display: flex;
+  gap: 1rem;
+}
+.iconw {
+  font-size: 35px;
+  color: var(--primaryColor);
+}
+
+.logo h1 {
+  color: var(--blackColor);
+}
+
+@media screen and (min-width: 940px) {
+}
